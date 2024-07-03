@@ -1,0 +1,84 @@
+:root {
+  --third-color: #dcf2f1;
+  --text-color: #365486;
+  --alternate-color: #7fc7d9;
+  --carbon-color:#bd76f8;
+}
+.nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+}
+
+#list {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  align-items: center;
+  border: 2px solid #365486 ;
+  object-fit: contain;
+}
+
+.ruto {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  align-items: center;
+}
+.main-nav {
+  display: flex;
+  justify-content: space-around;
+  margin:auto;
+  gap: 3rem;
+  background-color:var(--carbon-color);
+  height: 10vh;
+  width: 80%;
+  align-items: center;
+  align-self: center;
+border-radius: 8px;
+margin-bottom: 2rem;
+}
+@media screen and (max-width:21.7em) {
+  .main-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    object-fit: contain;
+    width:50% ;
+  }
+  @media screen and (max-width:25.75em) {
+    .main-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+      gap: 2px;
+      object-fit: contain;
+      width:100% ;
+    }
+  }
+  
+  .nav{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:2px;
+  }
+ 
+}
+.main-nav input {
+  width: 14rem;
+  height: 2rem;
+  border-radius: 4px;
+}
+
+#access {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  align-items: center;
+}
