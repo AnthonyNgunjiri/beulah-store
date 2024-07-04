@@ -11,7 +11,7 @@ import detergents  from "../../assets/detergent.jpeg"
 
 function Categories() {
   return (
-    <div>
+    <div className="man">
       <h2 id="bei">All Categories</h2>
       <div className="manee">
         <section className="top">
@@ -55,7 +55,7 @@ function Categories() {
           <button className="bton">view</button>
         </section>
       </div>
-
+<hr />
       <h2 id="bei">All Products</h2>
       <div className="manee">
         <section className="top">

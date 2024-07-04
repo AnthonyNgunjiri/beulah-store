@@ -14,6 +14,16 @@
     justify-content: center;
     color: var(--text-color);
   }
+  .man hr{
+    margin:10px  0;
+    height: 4px;
+    border: none;
+    background-color:whitesmoke;
+    box-shadow: #1e1e1e;
+     
+
+
+  }
   .imagery{
     background-color: #7FC7D9;
    width: 230px;
