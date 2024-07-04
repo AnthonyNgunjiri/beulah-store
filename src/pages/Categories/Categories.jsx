@@ -8,6 +8,7 @@ import electrons  from "../../assets/electronic.jpeg"
 import victuals  from "../../assets/free.jpeg"
 import drinks  from "../../assets/download.jpeg"
 import detergents  from "../../assets/detergent.jpeg"
+import Productdisplay from "../../components/productdisplay/Productdisplay";
 
 function Categories() {
   return (
@@ -66,7 +67,7 @@ function Categories() {
         <section className="top">
           <div className="imagery2"></div>
           <h3 id="bei">$95.96</h3>
-          <button className="bton">add to Cart</button>
+          <button className="bton" type="button" onClick={<Productdisplay />}>add to Cart</button>
         </section>
         <section className="top">
           <div className="imagery3"></div>

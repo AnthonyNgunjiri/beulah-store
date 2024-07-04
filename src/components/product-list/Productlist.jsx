@@ -1,12 +1,13 @@
 import React from 'react'
 
 function Productlist({id,image,name,price}) {
+  
   return (
     <div>
-        <section className='image'>{image}</section>
+        <section ><img src={image} alt="" className='cart-image'/></section>
        <span className='details'>
        <p>{name}</p>
-       <p>price</p>
+       <p>{price}</p>
        </span>
         
       

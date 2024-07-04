@@ -4,15 +4,20 @@ import { ProductContext } from '../../pages/Categories/ProductContext';
 import Productlist from '../product-list/Productlist';
 
 function Productdisplay() {
-    const {products}=useContext(ProductContext) 
+    const {products}=useContext(ProductContext) ;
   return (
-    <div className='manee'>
+    <section className="main">
+       <h2>cart items</h2>
+ <div className='cart-items'>
+     
     {products.map((items,index)=>{
       return<Productlist key={index}id={items._id} image={items.image} name={items.name}price={items.price} />
     })}
 
       
     </div>
+    </section>
+   
   )
 }
 

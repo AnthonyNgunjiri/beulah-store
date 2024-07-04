@@ -1,0 +1,31 @@
+:root{
+    --third-color:#DCF2F1;
+    --primary-color:#1e1e1e;
+    --text-color:#365486;
+    --alternate-color:#7FC7D9;
+    --royal-color:#a48b0c;
+  }
+.cart-image{
+    width: 200px;
+    height: 200px;
+}
+.main{
+    color:var(--text-color) ;
+    margin: 30px auto;
+}
+.main h2{
+    display: grid;
+    place-content: center;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+   
+}
+.cart-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(245px,1fr));
+    margin-top:30px auto;
+    row-gap: 50px;
+    gap: 30px;
+    place-content: center;
+   
+}
