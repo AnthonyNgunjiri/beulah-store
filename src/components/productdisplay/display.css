@@ -8,10 +8,15 @@
 .cart-image{
     width: 200px;
     height: 200px;
+    position: relative;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
+
 .main{
     color:var(--text-color) ;
     margin: 30px auto;
+    
 }
 .main h2{
     display: grid;
@@ -21,11 +26,38 @@
    
 }
 .cart-items{
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(245px,1fr));
-    margin-top:30px auto;
-    row-gap: 50px;
-    gap: 30px;
-    place-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 6rem;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    
    
+}
+.fidel{
+    display: flex;
+    flex-direction: column;
+}
+
+.count{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    object-fit: cover;
+    
+}
+.count button{
+   border: var(--alternate-color);
+   background-color:var(--carbon-color) ;
+  
+   text-transform: capitalize;
+   
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

@@ -7,7 +7,7 @@ function Productdisplay() {
     const {products}=useContext(ProductContext) ;
   return (
     <section className="main">
-       <h2>cart items</h2>
+      
  <div className='cart-items'>
      
     {products.map((items,index)=>{

@@ -5,7 +5,7 @@ import clothings  from "../../assets/clothing.jpeg"
 import perfume  from "../../assets/perfume.jpeg"
 import shoes  from "../../assets/shoes.jpeg"
 import electrons  from "../../assets/electronic.jpeg"
-import victuals  from "../../assets/free.jpeg"
+import victuals  from "../../assets/trolley.jpeg"
 import drinks  from "../../assets/download.jpeg"
 import detergents  from "../../assets/detergent.jpeg"
 import Productdisplay from "../../components/productdisplay/Productdisplay";
@@ -58,47 +58,8 @@ function Categories() {
       </div>
 <hr />
       <h2 id="bei">All Products</h2>
-      <div className="manee">
-        <section className="top">
-          <div className="imagery1"></div>
-          <h3 id="bei">$95.96</h3>
-          <button className="bton">add to Cart</button>
-        </section>
-        <section className="top">
-          <div className="imagery2"></div>
-          <h3 id="bei">$95.96</h3>
-          <button className="bton" type="button" onClick={<Productdisplay />}>add to Cart</button>
-        </section>
-        <section className="top">
-          <div className="imagery3"></div>
-          <h3 id="bei">$95.96</h3>
-          <button className="bton">add to Cart</button>
-        </section>
-        <section className="top">
-          <div className="imagery4"></div>
-          <h3 id="bei">$95.96</h3>
-          <button className="bton">add to Cart</button>
-        </section>
-        <section className="top">
-          <div className="imagery7"></div>
-          <h3 id="bei">$95.96</h3>
-          <button className="bton">add to Cart</button>
-        </section>
-        <section className="top">
-          <div className="imagery8"></div>
-          <h3 id="bei">$95.96</h3>
-          <button className="bton">add to Cart</button>
-        </section>
-        <section className="top">
-          <div className="imagery9"></div>
-          <h3 id="bei">$95.96</h3>
-          <button className="bton">add to Cart</button>
-        </section>
-        <section className="top">
-          <div className="imagery0"></div>
-          <h3 id="bei">$95.96</h3>
-          <button className="bton">add to Cart</button>
-        </section>
+      <div >
+       <Productdisplay/>
       </div>
     </div>
   );

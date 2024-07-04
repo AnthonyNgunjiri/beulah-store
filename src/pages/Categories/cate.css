@@ -42,6 +42,7 @@
     border-radius: 4px;
     background-color: var(--carbon-color);
     color: var(--third-color);
+    border: var(--third-color);
   }
 
   #bei{

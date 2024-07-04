@@ -5,7 +5,7 @@ import cat from "../../assets/electronic.jpeg"
 import jewel from "../../assets/jewel.jpeg"
 import clothing from "../../assets/clothing.jpeg"
 import shoes from "../../assets/shoes.jpeg"
-import food from "../../assets/free.jpeg"
+import food from "../../assets/trolley.jpeg"
 function Home() {
   return (
     <div className="main">

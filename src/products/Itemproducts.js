@@ -1,46 +1,78 @@
 export const  products = [
     {
         id: 1,
-        image: 'https://m.media-amazon.com/images/I/71YI6JpB53L._AC_SL1500_.jpg',
+        image: './src/assets/laptop.jpeg',
         name: 'Laptop',
         price: '$999.99 USD'
     },
     {
         id: 2,
-        image: 'https://m.media-amazon.com/images/I/71j2z3Ws7rL._AC_UL1500_.jpg',
+        image: './src/assets/clothing.jpeg',
         name: 'T-Shirt',
         price: '$19.99 USD'
     },
     {
         id: 3,
-        image: 'https://m.media-amazon.com/images/I/71iqpBdy7-L._AC_UL1500_.jpg',
+        image: './src/assets/shoes.jpeg',
         name: 'Running Shoes',
         price: '$59.99 USD'
     },
     {
         id: 4,
-        image: 'https://m.media-amazon.com/images/I/91iN9i1uUBL._AC_SL1500_.jpg',
+        image: './src/assets/bread.jpeg',
         name: 'Whole Wheat Bread',
         price: '$2.99 USD'
     },
     {
         id: 5,
-        image: 'https://m.media-amazon.com/images/I/61ezt9DgJiL._AC_SL1500_.jpg',
+        image: './src/assets/soda.jpeg',
         name: 'Cola Drink',
         price: '$1.49 USD'
     },
     {
         id: 6,
-        image: 'https://m.media-amazon.com/images/I/71RO5WxZQfL._AC_SL1500_.jpg',
+        image: './src/assets/detergent.jpeg',
         name: 'Laundry Detergent',
         price: '$8.99 USD'
     },
     {
         id: 7,
-        image: 'https://m.media-amazon.com/images/I/71iMWooJWUL._AC_SL1500_.jpg',
-        name: 'Toothpaste',
+        image: './src/assets/cylinder.jpeg',
+        name: 'meko gas',
+        price: '$3.49 USD'
+    },
+
+    {
+        id: 8,
+        image: './src/assets/gold.jpeg',
+        name: 'necklace',
+        price: '$3.49 USD'
+    },
+    {
+        id: 9,
+        image: './src/assets/appliances.jpeg',
+        name: 'microwave',
+        price: '$3.49 USD'
+    },
+    {
+        id: 10,
+        image: './src/assets/bike.jpeg',
+        name: 'bike',
+        price: '$3.49 USD'
+    },
+    {
+        id: 11,
+        image: './src/assets/perfume.jpeg',
+        name: 'perfume',
+        price: '$3.49 USD'
+    },
+    {
+        id: 12,
+        image: './src/assets/Beras.jpeg',
+        name: 'Basmati ',
         price: '$3.49 USD'
     }
+
 ];
 
 console.log(products);
