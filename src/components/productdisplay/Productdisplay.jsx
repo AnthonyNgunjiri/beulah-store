@@ -11,7 +11,7 @@ function Productdisplay() {
  <div className='cart-items'>
      
     {products.map((items,index)=>{
-      return<Productlist key={index}id={items._id} image={items.image} name={items.name}price={items.price} />
+      return<Productlist key={index}id={items.id} image={items.image} name={items.name}price= {items.price} />
     })}
 
       

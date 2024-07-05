@@ -1,5 +1,4 @@
-import React from "react";
-import { useContext } from "react";
+import React, { useContext } from "react";
 import { ProductContext } from "../../pages/Categories/ProductContext";
 
 function Productlist({ id, image, name, price }) {
@@ -10,21 +9,22 @@ function Productlist({ id, image, name, price }) {
       <section className="item">
         <section className="fidel">
           <img src={image} alt="" className="cart-image" />
-
           {!cartItems[id] ? (
-            <button onClick={() => addCart(id)} className="bton">add to cart</button>
+            <button onClick={() => addCart(id)} className="bton">
+              Add to Cart
+            </button>
           ) : (
             <section className="count">
-              <button onClick={() => removeFromCart(id)}>remove</button>
+              <button onClick={() => removeFromCart(id)}>Remove</button>
               <p>{cartItems[id]}</p>
-              <button onClick={() => addCart(id)}>add item</button>
+              <button onClick={() => addCart(id)}>Add Item</button>
             </section>
           )}
         </section>
 
         <span className="details">
           <p>{name}</p>
-          <p>{price}</p>
+          <p>${price} USD</p>
         </span>
       </section>
     </div>

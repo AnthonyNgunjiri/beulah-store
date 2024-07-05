@@ -7,3 +7,17 @@
   }
 
 
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 30px auto;
+  color: var(--text-color);
+  column-gap: 10px;
+ justify-content: center;
+ align-items: center;
+}
+
+ form button, input{
+  width:30rem ;
+ }
