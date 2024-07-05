@@ -20,6 +20,7 @@ function Categories() {
 
           <button className="bton">view</button>
         </section>
+      
         <section className="top">
           <div ><img src={perfume} className="imagery"/></div>
 

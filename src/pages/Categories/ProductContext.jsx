@@ -5,19 +5,33 @@ export const ProductContext = createContext(null);
 
 const ProductContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
+
   const addCart = (itemId) => {
     if (!cartItems[itemId]) {
-      setCartItems((prev) => ({ ...prev, [itemId]:1}));
+      setCartItems((prev) => ({ ...prev, [itemId]: 1 }));
     } else {
-      setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId]+1 }));
+      setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
     }
   };
+
   const removeFromCart = (itemId) => {
-    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId]-1}));
+    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
   };
-  useEffect(() => {
-    console.log(cartItems);
-  }, [cartItems]);
+
+  const getTotalAmount = () => {
+    let totalAmount = 0;
+    for (const item in cartItems) {
+      if (cartItems[item] > 0) {
+        let itemInfo = products.find(
+          (product) => product.id === parseInt(item)
+        );
+        if (itemInfo) {
+          totalAmount += parseFloat(itemInfo.price) * cartItems[item];
+        }
+      }
+    }
+    return totalAmount;
+  };
 
   const contextValue = {
     products,
@@ -25,6 +39,7 @@ const ProductContextProvider = (props) => {
     setCartItems,
     addCart,
     removeFromCart,
+    getTotalAmount,
   };
 
   return (
@@ -33,4 +48,5 @@ const ProductContextProvider = (props) => {
     </ProductContext.Provider>
   );
 };
+
 export default ProductContextProvider;

@@ -17,6 +17,7 @@
   margin-top:100px;
   width: 80%;
    margin: auto;
+   min-height:100vh;
 }
 .cart-title{
   display: grid;
@@ -31,4 +32,32 @@
 #itemie{
   margin: 10px 0px;
 
+}
+.cart-bottom{
+ margin-top: 80px;
+ display: flex;
+ justify-content: space-between;
+ gap: max(12vw, 20px); 
+}
+.card-totals{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.card-total-details hr{
+  margin:10px 0px;
+}
+.card-total-details{
+  display: flex;
+  justify-content: space-between;
+  color: #555;
+}
+.pay{
+  background-color: var(--alternate-color);
+  display:flex ;
+  align-items:center;
+  border: var(--third-color); 
+  height:4vh;
+  border-radius:4px;
 }
