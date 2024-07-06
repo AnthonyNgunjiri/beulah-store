@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./nav.css";
 import { FaHome } from "react-icons/fa";
-import { BiCategory } from "react-icons/bi";
+import { BiCategory, BiSolidUserAccount } from "react-icons/bi";
 import { BsCart4 } from "react-icons/bs";
-import { BiSolidUserAccount } from "react-icons/bi";
+// import { BiSolidUserAccount } from "react-icons/bi";
 import { AiOutlineMenuUnfold } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
@@ -11,9 +11,15 @@ function Navigation() {
   const [menu, setmenu] = useState("Home");
   return (
     <div className="main-nav">
-      <div id="access">
+      <div className="access" onClick={() => setmenu("Categories")}
+         
+          id={menu === "Quick access" ? "list" : ""} >
+        <Link to="/Signin">
         <AiOutlineMenuUnfold />
         Quick access
+           
+          </Link>
+       
       </div>
       <ul className="nav">
         <li
@@ -47,13 +53,13 @@ function Navigation() {
           </Link>
         </li>
         <li
-          onClick={() => setmenu("Account")}
+          onClick={() => setmenu("Signup")}
           className="ruto"
-          id={menu === "Account" ? "list" : ""}
+          id={menu === "Signup" ? "list" : ""}
         >
-          <Link to="/Account">
+          <Link to="/Signup">
             <BiSolidUserAccount />
-            Account{" "}
+            Signup{" "}
           </Link>
         </li>
       </ul>

@@ -1,0 +1,1 @@
+export const api_secret= VITE_API_URL;
