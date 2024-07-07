@@ -5,13 +5,7 @@
     --alternate-color:#7FC7D9;
     --royal-color:#a48b0c;
   }
-  /* .tips{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-  } */
-
+ 
 .cart{
   color: var(--text-color);
   margin-top:100px;
@@ -60,4 +54,10 @@
   border: var(--third-color); 
   height:4vh;
   border-radius:4px;
+}
+.del{
+  background-color:var(--royal-color);
+  color: var(--third-color);
+  border-radius: 4px;
+  cursor: pointer;
 }

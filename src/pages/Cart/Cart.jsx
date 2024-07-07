@@ -30,7 +30,7 @@ function Cart() {
                 <p>${item.price}</p>
                 <p>{cartItems[item.id]}</p>
                 <p>{item.price * cartItems[item.id]}</p>
-                <p onClick={() => removeFromCart(item.id)}>x</p>
+                <p onClick={() => removeFromCart(item.id)} className="del">Remove</p>
               </div>
               <hr />
             </div>

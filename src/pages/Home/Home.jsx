@@ -6,7 +6,9 @@ import jewel from "../../assets/jewel.jpeg"
 import clothing from "../../assets/clothing.jpeg"
 import shoes from "../../assets/shoes.jpeg"
 import food from "../../assets/trolley.jpeg"
+import { useNavigate,Link } from "react-router-dom";
 function Home() {
+const navigate=useNavigate();
   return (
     <div className="main">
         <div className="hero">
@@ -23,7 +25,7 @@ function Home() {
         </section>
 
         <section className="btn">
-          <button id="but">Sign up</button>
+          <button id="but"><Link to="/Signin" >Sign in</Link> </button>
         </section>
       </section>
       </div>

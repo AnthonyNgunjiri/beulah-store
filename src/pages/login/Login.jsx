@@ -12,7 +12,7 @@ const Signup = () => {
     try {
       setLoading(true)
       setError(false)
-      const response = await fetch(`${api_secret}/api/users/register`, {
+      const response = await fetch(`${api_secret}/api/users/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -37,9 +37,8 @@ const Signup = () => {
     initialValues: {
     
       emailAddress: "",
-      phoneNumber: "",
       password: "",
-      confirmPassword: "",
+      
     },
     validationSchema: Yup.object({
      

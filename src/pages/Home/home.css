@@ -5,10 +5,12 @@
   --alternate-color: #7fc7d9;
   --royal-color: #a48b0c;
 }
-body{
+
+body {
   background-color: var(--third-color);
 }
-.madango{
+
+.madango {
   color: var(--text-color);
   display: grid;
   place-content: center;
@@ -19,37 +21,23 @@ body{
     url("/src/assets/homepage.jpeg") no-repeat center/cover;
   height: 60vh;
   width: 80%;
-  margin:  auto;
+  margin: auto;
   position: relative;
+  display: flex;
   align-items: flex-end;
   justify-content: center;
-  display: flex;
   border-radius: 8px;
   margin-bottom: 2rem;
- 
 }
-@media screen and (max-width:21.7em) {
-  .hero{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2px;
-    object-fit: contain;
-    width:50%;
-  }
-}
-@media screen and (max-width:25.75em) {
-  .hero{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    object-fit: cover;
-    width:94% ;
-  }
 
+@media screen and (max-width: 576px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 50vh;
+  }
 }
 
 .hero-description {
@@ -57,174 +45,155 @@ body{
   display: flex;
   flex-direction: column;
   color: var(--third-color);
-  
- 
 }
+
 .heading {
   font-size: max(4.5vw, 22px);
   font-weight: 500;
 }
-#but{
-  height: 40px;;
+
+#but {
+  height: 40px;
   width: 100px;
   border-radius: 10px;
   background-color: var(--carbon-color);
   color: var(--third-color);
- 
 }
 
-.btn{
-  display:flex;
+.btn {
+  display: flex;
   gap: 2rem;
   align-items: flex-end;
   padding-bottom: 2rem;
   padding-top: 2rem;
 }
 
-.hola{
+.hola {
   color: var(--text-color);
   border: 2px solid #365486;
   border-radius: 8px;
-  background-color:var(--carbon-color);
+  background-color: var(--carbon-color);
 }
-.details{
+
+.details {
   width: 180px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-left: 20px;
-  color:var(--text-color);
+  color: var(--text-color);
 }
-.detail{
+
+.detail {
   width: 180px;
   display: flex;
   flex-direction: column;
   padding-left: 10px;
   color: var(--text-color);
 }
-.details h3{
-  text-transform: capitalize;
 
+.details h3 {
+  text-transform: capitalize;
 }
-.detail h4{
+
+.detail h4 {
   text-transform: capitalize;
   display: flex;
   justify-content: left;
   align-items: start;
-
 }
-.cat{
-  display:flex;
-  margin:auto;
+
+.cat {
+  display: flex;
   justify-content: center;
   gap: 1rem;
+  margin: auto;
   margin-bottom: 2rem;
-
- 
+  width:80% ;
 }
-@media screen and (max-width:21.7em) {
-  .cat{
+
+@media screen and (max-width: 576px) {
+  .cat {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
+    width:80% ;
     justify-content: center;
-    gap: 2px;
-    object-fit: contain;
-    width:50%;
-    
   }
-
   
-  .cat img{
-    width:50%;
-  }
-  .details h3{
-    font-size:xx-small;
+  .cat img {
+    width: 100%;
   }
 }
-@media screen and (max-width:25.75em) {
-  .cat{
+
+@media screen and (max-width: 768px) {
+  .cat {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    place-content: center;
+    grid-template-columns: repeat(3,1fr);
     place-items: center;
-    padding: 2rem;
-    object-fit: contain;
-    
-    
+    gap: 1rem;
+    width:80% ;
+    align-items: center;
   }
-
 }
 
-
-.cat img{
+.cat img {
   width: 200px;
   height: 200px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-.image{
+.image {
   width: 200px;
   height: 200px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  background: url(../../assets/whole.jpeg)no-repeat center/cover;
+  background: url(../../assets/whole.jpeg) no-repeat center/cover;
 }
-.image1{
+
+.image1 {
   width: 200px;
   height: 200px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  background: url(../../assets/offer1.jpeg)no-repeat center/cover;
+  background: url(../../assets/offer1.jpeg) no-repeat center/cover;
 }
-.image2{
+
+.image2 {
   width: 200px;
   height: 200px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  background: url(../../assets/offer2.jpeg)no-repeat center/cover;
+  background: url(../../assets/offer2.jpeg) no-repeat center/cover;
 }
-.image3{
+
+.image3 {
   width: 200px;
   height: 200px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  background: url(../../assets/shoe.jpeg)no-repeat center/cover;
+  background: url(../../assets/shoe.jpeg) no-repeat center/cover;
 }
-.image4{
+
+.image4 {
   width: 200px;
   height: 200px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  background: url(../../assets/gold.jpeg)no-repeat center/cover;
+  background: url(../../assets/gold.jpeg) no-repeat center/cover;
 }
-.item{
-  background-color: #7fc7d9; 
+
+.item {
+  background-color: #7fc7d9;
   border-radius: 8px;
-  
 }
-@media screen and (max-width:21.7em) {
-  .item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    object-fit: contain;
-    
-  }
 
-}
-@media screen and (max-width:25.75em) {
-  .item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    object-fit: contain;
-    flex-wrap: wrap;
+@media screen and (max-width: 576px) {
+  .item {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 1rem;
   }
-
 }

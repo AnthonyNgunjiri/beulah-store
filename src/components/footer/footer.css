@@ -1,53 +1,78 @@
 :root {
-    --third-color: #dcf2f1;
-    --carbon-color: #bd76f8;
-    --text-color: #365486;
-    --alternate-color: #7fc7d9;
-    --royal-color: #a48b0c;
-  }
-.contact{
-    background-color:var(--carbon-color) ;
-    display: flex;
-    justify-content: space-around;
-    text-decoration: none;
-    margin:  auto;
-    align-items: center;
-    width:80%;
-    list-style: none;
-    border-top-left-radius: 8px;
+  --third-color: #dcf2f1;
+  --carbon-color: #bd76f8;
+  --text-color: #365486;
+  --alternate-color: #7fc7d9;
+  --royal-color: #a48b0c;
+}
+
+.contact {
+  background-color: var(--carbon-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  margin: auto;
+  width: 80%;
+  list-style: none;
+  border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  
+  padding: 1rem;
+  flex-wrap: wrap;
 }
-@media screen and (max-width:21.7em) {
-    .contact{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 2px;
-      object-fit: contain;
-      width:50% ;
-    }
+
+.contact div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-@media screen and (max-width:25.75em) {
-    .contact{
-    display: flex;
+
+#bit {
+  display: flex;
+  gap: 2rem;
+  fill: var(--text-color);
+}
+
+#right {
+  color: var(--text-color);
+  background-color: var(--carbon-color);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+  width: 80%;
+  padding: 1rem;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+@media screen and (max-width: 576px) {
+  .contact {
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-      gap: 2px;
-      object-fit: contain;
-      width:100% ;
-    }
-  }
-#right{
-    color: #365486;
-    background-color: #bd76f8;
-    display: flex;
-    align-content: center;
-    margin:auto;
     justify-content: center;
-    width:80%
-    
-    
+    width: 80%;
+    gap: 0.5rem;
+  }
+
+  #bit {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  #right {
+    width: 80%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    width: 80%;
+  }
+
+  #right {
+    width: 80%;
+  }
 }

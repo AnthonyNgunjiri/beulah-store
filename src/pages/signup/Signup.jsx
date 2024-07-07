@@ -23,7 +23,7 @@ const Signup = () => {
       const data = await response.json();
 
       if (data.success === true) {
-        navigate("/categories")
+        navigate("/")
       } else {
         setError(data.message);
       }
